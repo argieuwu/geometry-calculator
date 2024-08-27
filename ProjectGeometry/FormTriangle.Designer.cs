@@ -64,6 +64,7 @@
             btnBackToMenu.TabIndex = 13;
             btnBackToMenu.Text = "BACK TO MENU";
             btnBackToMenu.UseVisualStyleBackColor = true;
+            btnBackToMenu.Click += btnBackToMenu_Click;
             // 
             // btnClearCircle
             // 

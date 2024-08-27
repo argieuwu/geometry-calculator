@@ -63,34 +63,35 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(355, 131);
+            textBox2.Location = new Point(347, 131);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
+            textBox2.Size = new Size(108, 23);
             textBox2.TabIndex = 24;
             // 
             // textBox1
             // 
             textBox1.Location = new Point(128, 131);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
+            textBox1.Size = new Size(108, 23);
             textBox1.TabIndex = 23;
             // 
             // btnBackToMenu
             // 
             btnBackToMenu.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnBackToMenu.Location = new Point(292, 266);
+            btnBackToMenu.Location = new Point(279, 266);
             btnBackToMenu.Name = "btnBackToMenu";
             btnBackToMenu.Size = new Size(123, 34);
             btnBackToMenu.TabIndex = 22;
             btnBackToMenu.Text = "BACK TO MENU";
             btnBackToMenu.UseVisualStyleBackColor = true;
+            btnBackToMenu.Click += btnBackToMenu_Click;
             // 
             // btnClearCircle
             // 
             btnClearCircle.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnClearCircle.Location = new Point(113, 266);
             btnClearCircle.Name = "btnClearCircle";
-            btnClearCircle.Size = new Size(115, 34);
+            btnClearCircle.Size = new Size(123, 34);
             btnClearCircle.TabIndex = 21;
             btnClearCircle.Text = "CLEAR";
             btnClearCircle.UseVisualStyleBackColor = true;
@@ -98,7 +99,7 @@
             // btnCircumference
             // 
             btnCircumference.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCircumference.Location = new Point(292, 193);
+            btnCircumference.Location = new Point(279, 208);
             btnCircumference.Name = "btnCircumference";
             btnCircumference.Size = new Size(123, 33);
             btnCircumference.TabIndex = 20;
@@ -108,9 +109,9 @@
             // btnArea
             // 
             btnArea.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnArea.Location = new Point(113, 193);
+            btnArea.Location = new Point(113, 208);
             btnArea.Name = "btnArea";
-            btnArea.Size = new Size(115, 33);
+            btnArea.Size = new Size(123, 33);
             btnArea.TabIndex = 19;
             btnArea.Text = "AREA";
             btnArea.UseVisualStyleBackColor = true;
@@ -129,11 +130,12 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(54, 133);
+            label1.Location = new Point(60, 131);
             label1.Name = "label1";
             label1.Size = new Size(73, 21);
             label1.TabIndex = 17;
             label1.Text = "RADIUS:";
+            label1.Click += label1_Click;
             // 
             // FormSquare
             // 
