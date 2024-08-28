@@ -24,7 +24,12 @@ namespace ProjectGeometry
             FormMenu newform = new FormMenu();
             newform.ShowDialog();
             this.ShowDialog();
-            
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

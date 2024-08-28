@@ -48,7 +48,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(518, 56);
+            panel1.Size = new Size(479, 56);
             panel1.TabIndex = 25;
             // 
             // label3
@@ -142,7 +142,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightGreen;
-            ClientSize = new Size(518, 450);
+            ClientSize = new Size(479, 450);
             Controls.Add(panel1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
