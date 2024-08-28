@@ -30,5 +30,10 @@ namespace ProjectGeometry
             newform.ShowDialog();
             this.ShowDialog();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

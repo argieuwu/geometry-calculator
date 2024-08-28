@@ -30,5 +30,10 @@ namespace ProjectGeometry
             newform.ShowDialog();
             this.ShowDialog();
         }
+
+        private void btnArea_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

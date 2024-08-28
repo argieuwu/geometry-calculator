@@ -65,7 +65,11 @@ namespace ProjectGeometry
 
         private void txtRadius_TextChanged(object sender, EventArgs e)
         {
-
+            if (System.Text.RegularExpressions.Regex.IsMatch(txtRadius.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                txtRadius.Text = txtRadius.Text.Remove(txtRadius.Text.Length - 1);
+            }
         }
     }
 }
