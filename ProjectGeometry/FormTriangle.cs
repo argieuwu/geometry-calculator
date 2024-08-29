@@ -18,21 +18,46 @@ namespace ProjectGeometry
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnBackToMenu_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FormMenu newform = new FormMenu();
-            newform.ShowDialog();
-            this.ShowDialog();
+            this.Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+  
+
+        private void btnArea_Click(object sender, EventArgs e)
         {
+            try
+            {
+                double baseLength = double.Parse(TbtnBase.Text);
+                double height = double.Parse(TbtnHeight.Text);
+                double area = 0.5 * baseLength * height;
+
+                TbtnResult.Text = $"Area: {area:F2}";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please enter valid numbers for base and height.");
+            }
+
+        }
+
+     
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(TbtnResult.Text))
+            {
+               
+            }
+
+        }
+
+        private void btnClearCircle_Click(object sender, EventArgs e)
+        {
+            TbtnBase.Clear();
+            TbtnHeight.Clear();
+            TbtnResult.Clear();
 
         }
     }

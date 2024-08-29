@@ -58,7 +58,6 @@
             label1.Size = new Size(82, 37);
             label1.TabIndex = 0;
             label1.Text = "Menu";
-      
             // 
             // button1
             // 

@@ -2,34 +2,40 @@ namespace ProjectGeometry
 {
     public partial class FormMenu : Form
     {
+        // Declare form instances as class fields
+        private FormSquare formSquare;
+        private FormTriangle formTriangle;
+        private FormCircle formCircle;
+        private FormRectangle formRectangle;
+
         public FormMenu()
         {
             InitializeComponent();
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            FormTriangle Check = new FormTriangle();
-            Check.ShowDialog();
+            // Initialize the forms in the constructor
+            formSquare = new FormSquare();
+            formTriangle = new FormTriangle();
+            formCircle = new FormCircle();
+            formRectangle = new FormRectangle();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormCircle Check = new FormCircle();
-            Check.ShowDialog();
+            formCircle.ShowDialog();
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            formTriangle.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FormRectangle Check = new FormRectangle();
-            Check.ShowDialog();
-
+            formRectangle.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            FormSquare Check = new FormSquare();
-            Check.ShowDialog();
+            formSquare.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -37,7 +43,5 @@ namespace ProjectGeometry
             MessageBox.Show("Nice G!");
             this.Close();
         }
-
-        
     }
 }

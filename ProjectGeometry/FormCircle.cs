@@ -21,10 +21,7 @@ namespace ProjectGeometry
 
         private void btnBackToMenu_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FormMenu newform = new FormMenu();
-            newform.ShowDialog();
-            this.ShowDialog();
+            this.Close();
         }
 
         private void btnArea_Click(object sender, EventArgs e)
@@ -46,21 +43,21 @@ namespace ProjectGeometry
             if (double.TryParse(txtRadius.Text, out double radius))
             {
                 double circumference = 2 * Math.PI * radius;
-                txtResult.Text = $"Circumference: {circumference:F2}";
+                txtResult.Text = $"Circume: {circumference:F2}";
             }
             else
             {
                 MessageBox.Show("Please enter a valid number for the radius.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-      
+
 
 
         private void btnClearCircle_Click(object sender, EventArgs e)
         {
             txtRadius.Clear();
             txtResult.Clear();
-           
+
         }
 
         private void txtRadius_TextChanged(object sender, EventArgs e)
@@ -71,5 +68,7 @@ namespace ProjectGeometry
                 txtRadius.Text = txtRadius.Text.Remove(txtRadius.Text.Length - 1);
             }
         }
+
+        
     }
 }

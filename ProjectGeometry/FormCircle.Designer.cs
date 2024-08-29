@@ -45,7 +45,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(51, 113);
+            label1.Location = new Point(12, 95);
             label1.Name = "label1";
             label1.Size = new Size(73, 21);
             label1.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(230, 113);
+            label2.Location = new Point(197, 95);
             label2.Name = "label2";
             label2.Size = new Size(70, 21);
             label2.TabIndex = 1;
@@ -64,9 +64,9 @@
             // btnArea
             // 
             btnArea.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnArea.Location = new Point(90, 218);
+            btnArea.Location = new Point(12, 218);
             btnArea.Name = "btnArea";
-            btnArea.Size = new Size(124, 57);
+            btnArea.Size = new Size(160, 57);
             btnArea.TabIndex = 2;
             btnArea.Text = "AREA";
             btnArea.UseVisualStyleBackColor = true;
@@ -75,9 +75,9 @@
             // btnCircumference
             // 
             btnCircumference.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCircumference.Location = new Point(252, 218);
+            btnCircumference.Location = new Point(197, 218);
             btnCircumference.Name = "btnCircumference";
-            btnCircumference.Size = new Size(123, 57);
+            btnCircumference.Size = new Size(160, 57);
             btnCircumference.TabIndex = 3;
             btnCircumference.Text = "CIRCUMFERENCE";
             btnCircumference.UseVisualStyleBackColor = true;
@@ -86,9 +86,9 @@
             // btnClearCircle
             // 
             btnClearCircle.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnClearCircle.Location = new Point(90, 300);
+            btnClearCircle.Location = new Point(12, 300);
             btnClearCircle.Name = "btnClearCircle";
-            btnClearCircle.Size = new Size(124, 55);
+            btnClearCircle.Size = new Size(160, 55);
             btnClearCircle.TabIndex = 4;
             btnClearCircle.Text = "CLEAR";
             btnClearCircle.UseVisualStyleBackColor = true;
@@ -97,9 +97,9 @@
             // btnBackToMenu
             // 
             btnBackToMenu.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnBackToMenu.Location = new Point(252, 300);
+            btnBackToMenu.Location = new Point(197, 300);
             btnBackToMenu.Name = "btnBackToMenu";
-            btnBackToMenu.Size = new Size(123, 55);
+            btnBackToMenu.Size = new Size(160, 55);
             btnBackToMenu.TabIndex = 5;
             btnBackToMenu.Text = "BACK TO MENU";
             btnBackToMenu.UseVisualStyleBackColor = true;
@@ -108,9 +108,9 @@
             // txtRadius
             // 
             txtRadius.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtRadius.Location = new Point(68, 147);
+            txtRadius.Location = new Point(12, 119);
             txtRadius.Name = "txtRadius";
-            txtRadius.Size = new Size(114, 33);
+            txtRadius.Size = new Size(160, 33);
             txtRadius.TabIndex = 6;
             txtRadius.TextChanged += txtRadius_TextChanged;
             // 
@@ -121,14 +121,14 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(479, 52);
+            panel1.Size = new Size(378, 52);
             panel1.TabIndex = 8;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.Location = new Point(197, 9);
+            label3.Location = new Point(133, 9);
             label3.Name = "label3";
             label3.Size = new Size(87, 32);
             label3.TabIndex = 0;
@@ -136,18 +136,20 @@
             // 
             // txtResult
             // 
-            txtResult.Font = new Font("Segoe UI", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            txtResult.Location = new Point(252, 147);
+            txtResult.Enabled = false;
+            txtResult.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtResult.Location = new Point(197, 119);
             txtResult.Name = "txtResult";
-            txtResult.Size = new Size(185, 33);
+            txtResult.Size = new Size(160, 33);
             txtResult.TabIndex = 9;
+
             // 
             // FormCircle
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(479, 450);
+            ClientSize = new Size(378, 450);
             Controls.Add(txtResult);
             Controls.Add(panel1);
             Controls.Add(txtRadius);
