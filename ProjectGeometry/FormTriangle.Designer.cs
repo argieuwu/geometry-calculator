@@ -32,7 +32,6 @@
             TbtnBase = new TextBox();
             btnBackToMenu = new Button();
             btnClearCircle = new Button();
-            btnPerimeter = new Button();
             btnArea = new Button();
             label2 = new Label();
             txtBase = new Label();
@@ -40,8 +39,6 @@
             label3 = new Label();
             TbtnHeight = new TextBox();
             txtHeight = new Label();
-            btnHeight = new Button();
-            btnGamma = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -85,20 +82,10 @@
             btnClearCircle.UseVisualStyleBackColor = true;
             btnClearCircle.Click += btnClearCircle_Click;
             // 
-            // btnPerimeter
-            // 
-            btnPerimeter.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnPerimeter.Location = new Point(208, 229);
-            btnPerimeter.Name = "btnPerimeter";
-            btnPerimeter.Size = new Size(160, 61);
-            btnPerimeter.TabIndex = 11;
-            btnPerimeter.Text = "PERIMETER";
-            btnPerimeter.UseVisualStyleBackColor = true;
-            // 
             // btnArea
             // 
             btnArea.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnArea.Location = new Point(12, 229);
+            btnArea.Location = new Point(103, 257);
             btnArea.Name = "btnArea";
             btnArea.Size = new Size(160, 61);
             btnArea.TabIndex = 10;
@@ -164,34 +151,12 @@
             txtHeight.TabIndex = 17;
             txtHeight.Text = "HEIGHT:";
             // 
-            // btnHeight
-            // 
-            btnHeight.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnHeight.Location = new Point(12, 296);
-            btnHeight.Name = "btnHeight";
-            btnHeight.Size = new Size(160, 61);
-            btnHeight.TabIndex = 19;
-            btnHeight.Text = "HEIGHT";
-            btnHeight.UseVisualStyleBackColor = true;
-            // 
-            // btnGamma
-            // 
-            btnGamma.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnGamma.Location = new Point(208, 296);
-            btnGamma.Name = "btnGamma";
-            btnGamma.Size = new Size(160, 61);
-            btnGamma.TabIndex = 20;
-            btnGamma.Text = "GAMMA";
-            btnGamma.UseVisualStyleBackColor = true;
-            // 
             // FormTriangle
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCoral;
             ClientSize = new Size(378, 450);
-            Controls.Add(btnGamma);
-            Controls.Add(btnHeight);
             Controls.Add(TbtnHeight);
             Controls.Add(txtHeight);
             Controls.Add(panel1);
@@ -199,7 +164,6 @@
             Controls.Add(TbtnBase);
             Controls.Add(btnBackToMenu);
             Controls.Add(btnClearCircle);
-            Controls.Add(btnPerimeter);
             Controls.Add(btnArea);
             Controls.Add(label2);
             Controls.Add(txtBase);
@@ -217,7 +181,6 @@
         private TextBox TbtnBase;
         private Button btnBackToMenu;
         private Button btnClearCircle;
-        private Button btnPerimeter;
         private Button btnArea;
         private Label label2;
         private Label txtBase;
@@ -225,7 +188,5 @@
         private Label label3;
         private TextBox TbtnHeight;
         private Label txtHeight;
-        private Button btnHeight;
-        private Button btnGamma;
     }
 }
